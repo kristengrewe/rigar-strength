@@ -35,7 +35,6 @@ A web-based workout tracking application designed for Strength & Conditioning pr
 ### Authenticated **Admin** Role Can:
 - View a list of all registered members
 - View a list of all member workouts
-- Search workouts by member last name
 - Filter member workouts by:
   - Specific date or date range
   - Specific lift
@@ -47,10 +46,10 @@ A web-based workout tracking application designed for Strength & Conditioning pr
 
 - **Users Table** (with role-based access control: USER, ADMIN)
 - **Person Table** (member details)
-- **Lifts Table** (standard barbell movements)
-- **Workouts Table** (linked to users and lifts)
-- **Workout_Lifts Table** (join table for detailed workout sets and reps)
+- **Lift Table** (standard barbell movements)
+- **Person_Lift Table** (join table for person and lift, with detailed workout entries)
 <img width="618" height="391" alt="ERD Diagram" src="https://github.com/user-attachments/assets/d9de0190-a8c2-4dc7-9f48-d0b101931a9f" />
+
 
 ## 🧩 API Endpoint Design
 
