@@ -1,0 +1,103 @@
+@import './base.css';
+
+/* ===== BASE STYLES ===== */
+* {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+
+body.dark-mode .header,
+body.dark-mode .site-footer {
+  background-color: #111;
+  color: #fff;
+  border-color: #333;
+}
+
+body.dark-mode input {
+  background-color: #333;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark-mode .login-form,
+body.dark-mode .register-form {
+  background-color: #222;
+  border-color: #444;
+  color: #eee;
+}
+
+body.dark-mode .login-button,
+body.dark-mode .register-button {
+  background-color: #eee;
+  color: #111;
+}
+
+body.dark-mode .login-button:hover,
+body.dark-mode .register-button:hover {
+  background-color: #ccc;
+}
+
+body.dark-mode .nav-button::after {
+  background-color: transparent;
+}
+
+body.dark-mode .nav-button:hover::after,
+body.dark-mode .nav-button.router-link-exact-active::after {
+  background-color: #eee;
+}
+
+body.dark-mode .login-link {
+  color: #fff;
+}
+
+body.dark-mode .login-link:hover {
+  border-bottom-color: #fff;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  color: #fff;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  font-size: 0.8rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.3rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: #fff;
+}
